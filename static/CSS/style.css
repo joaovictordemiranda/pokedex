@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'tech';
+    src: url(./fonts/sticky_numbers/StickyNumbers.ttf)format('truetype');
+    font-weight: normal;
+}
+
+:root {
+--fonte-tech: 'Tech', cursive;
+}
+body {
+    background-image: url('../imagem/pokemon3.png');
+    background-repeat: no-repeat;    
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+
+
+    min-width: 328px;
+    max-width: 1366px;
+}
+
+.principal {
+    font-family: sans-serif;
+    margin: 0px auto;
+    padding: 0px;
+    border: 5px bold black;
+    border-radius: 10px 0px;
+}
+
+.title {
+    font-family: var(--fonte-tech);
+    margin: 32px;
+    margin-left: 0;
+    margin-right: 10px;
+    padding-right: 313px;
+    font-size: 2em;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3.5px );
+    -webkit-backdrop-filter: blur( 3.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+    min-width: 328px;
+    max-width: 1366px;
+}
+
+.parte1 {
+    position: absolute;
+    top: 17%;
+    left: 29%;
+    width: 292px;
+    padding: 20px;
+    transform: translate(-49%, -46%);
+    box-shadow: 0 5px 4px rgb(22, 22, 22);
+    border-radius: 7px 0;
+
+    min-width: 328px;
+    max-width: 1366px;
+}
+
+#corpo {
+    position: absolute;
+    font-family: var(--fonteTech);
+    top: 29%;
+    left: 51%;
+    transform: translate(-113%);
+
+    min-width: 328px;
+    max-width: 1366px;
+}
+
+.botao {
+    border-radius: 8px;
+    background: linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+    font-size: 11px;
+    cursor: pointer;
+    color: #ffffff;
+    font-weight: bold;
+    size: 13px 24px;
+    box-shadow: 10px 0px 14px -7px #276873;
+    text-shadow: 1px 0px 0px #3d768a;
+    display: inline;
+    transform: translate(13px, 0px);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.botao:hover {
+    background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+    background-color:#408c99;
+}
+
+.botao:active {
+    position: relative;
+    top: 1px;
+}
+
+.Myform {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3.5px );
+    -webkit-backdrop-filter: blur( 3.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 195px;
+
+    min-width: 328px;
+    max-width: 1366px;
+}

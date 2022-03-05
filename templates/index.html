@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='CSS/style.css')}}">
+    <title>Pokedex</title>
+</head>
+<body>
+    <div  class="title">
+        <h1><strong>Pokedex</strong></h1>
+    </div>
+
+    <main class="principal">
+        <div id="search_name">
+            <form class="Myform"  action="search_name" method="post" style="margin: auto;">
+                <div class="parte1">
+                    <input type="text" style="width: 200px;" name="nome" placeholder="Nome do Pokemon">
+                    <button class="botao" type="submit" name="search_name">Click Here!</button>
+                </div>
+        
+                <div id="corpo">
+                    <div class="name">
+                        <h3>Name: {{nome}}</h3>
+                    </div class="habilidade">
+                    <div>
+                        <h3>Abilities: {{habilidade}}</h3>
+                    </div>
+                    <div class="moves">
+                        <h3>Moves: {{moves}}</h3>
+                    </div>
+                    <div class="image"><img src="{{foto}}" style="height: 350px; width: 255px; transform: translate(189px, -165px);"><br></div>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
